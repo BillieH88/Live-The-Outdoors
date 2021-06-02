@@ -1,0 +1,329 @@
+*{
+    box-sizing:border-box;
+  }
+
+.bg-light{
+  padding: 20px 0;
+}
+/* ===================================  homepage/dashboard css ========================================================*/
+
+.hidden {
+    display: none; 
+} 
+
+.logo-img {
+    width: 20%;
+    height:20%;
+    border: none;
+}
+
+.complete-btn,.incomplete-btn {
+    position:absolute; 
+    top:10px; 
+    right:10px;
+}
+
+
+
+.remove-btn, .add-btn {
+    position:absolute ; 
+    bottom:20px; 
+    right:20px;
+}
+
+.add-btn {
+    color: lightgray;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    font-size: 2.2rem;
+}
+
+.remove-btn {
+    color : red;
+    transition: 0.3s;
+
+}
+.remove-btn:hover {
+    /* filter : brightness(90%); */
+    font-size: 2.2rem;
+}
+
+
+.trail-img {
+    position: relative;
+    width: 500px;
+    height: 340px;
+    transition: 1s;
+}
+.trail-img:hover {
+    filter: brightness(75%);    
+}
+
+.difficulty-level {
+    color: white;
+    text-align: center;
+    border: none;
+    width: 7rem;
+    height: fit-content;
+    background-color: cornflowerblue;
+    padding: .375rem .75rem;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+.card
+{
+  box-shadow: 5px 5px 5px lightgray; 
+}
+
+section {
+    margin: 15px;
+}
+
+.dashboard-h2 {
+    margin: 20px 0;
+    padding: 6px;
+    font-weight: bold;
+}
+
+.easy {
+    background-color : rgb(47, 149, 231);
+    color:white;
+}
+
+.moderate {
+    background-color :rgb(109, 92, 216);
+    color: white;
+}
+
+.difficult {
+    background-color : rgb(54, 52, 52);
+    color: white;
+}
+
+button, .remove-btn, .add-btn, .trail-img {
+    cursor: pointer;
+}
+
+/* ==================================== welcome page css ================================================== */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  height: 90px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 400px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
+
+.bg-div {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  height: 100vh;
+}
+
+.bg-img {
+  min-width: 100%;
+}
+
+.bg-div h2{
+  position: absolute;
+  top:50vh;
+  font-size:70px;
+  font-weight: bold;
+  color:white;
+  width: 80%;
+  text-align: center;
+}
+
+h1 {
+  position: absolute;
+  width: 600px;
+  font-weight: bold;
+  color: black;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Sign-up and Login form containers*/
+.form-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  height: 350px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+
+.signup{
+  height: 400px;
+}
+
+form{
+  margin: 20px;
+  font-size: 18px;
+  margin-bottom:10px;
+  margin-top: 10px;
+}
+
+form h1{
+  position: relative;
+  text-align:center;
+  font-weight:bold;
+  font-size:30px;
+  margin-bottom: 30px;
+}
+
+.login-email{
+  margin-bottom:10px;
+}
+
+.login-password{
+  margin-bottom:10px;
+  margin-top:20px;
+}
+
+form button{
+  margin: 10px 0;
+}
+
+#signup-header{
+  font-weight:bold;
+  color: black;
+}
+
+.signup-name{
+  margin-bottom: 20px;
+}
+
+.signup-email{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.signup-password{
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.btn:hover{
+  background-color: green;
+}
+
+
+/* ========================================== trailpage css ================================================== */
+
+#card-holder {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin: auto;
+  
+}
+
+#main-card {
+    width : 50rem;
+}
+
+#btn-holder {
+    margin: 40px;
+}
+
+#go-back-btn {
+    margin : 40px 40px 0 20px;
+    padding : 15px;
+}
+
+.main-card-img{
+    width : 50rem;
+    height: 30rem;
+}
+
+.card-img-overlay{
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-direction: column;
+    right: 1px;
+    left: 1px;
+    width : 50rem;
+    height: 30rem;
+}
+
+#level {
+    padding: 6px;
+    margin: 5px;
+}
+
+#place {
+    padding: 6px;
+    margin: 5px;
+}
+
+#map-btn-div {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin:20px 0;
+}
+
+#trail-description-div {
+    margin: 20px ;
+    text-align: center;
+}
+
+.card-footer {
+    background-color: darkslategray;
+}
+
+#trail-other-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.detail-div {
+    text-align: center;
+}
+
+#map-link {
+  text-decoration: none;
+}
+
+.fa-compass {
+  color: white;
+}
